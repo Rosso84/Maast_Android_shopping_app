@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ShopFragment">
 
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="Shop Fragment"
-       android:textSize="38sp"
-       android:gravity="center"
-       android:layout_centerInParent="true"
-       android:textColor="@color/colorBlack"
-       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+               <Button
+                   android:layout_width="134dp"
+                   android:layout_height="wrap_content"
+                   android:background="@color/colorwhite"
+                   android:text="Inspiration"
+                   android:textSize="10sp" />
+
+               <Button
+                   android:layout_width="133dp"
+                   android:layout_height="wrap_content"
+                   android:background="@color/colorwhite"
+                   android:text="Products"
+                   android:textSize="10sp" />
+
+               <Button
+                   android:layout_width="143dp"
+                   android:layout_height="wrap_content"
+                   android:background="@color/colorwhite"
+                   android:text="Artwork"
+                   android:textSize="10sp" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

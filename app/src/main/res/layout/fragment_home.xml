@@ -58,8 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Welcome to the online shop for Maast - A versatile collection of leather bags.\n\nBy breaking down The Maast bag into separate pieces we allow the customer to be the final designer.\n
-Create the combination you love and make a style of your own. Every style is unique, because nobody is like you. Choose between many colors, shapes, patterns and textures. The possibilities are endless! "
+            android:text="@string/the_recipe"
             android:textColor="@color/ColorGreyGrey" />
 
         <HorizontalScrollView
