@@ -10,8 +10,8 @@
     android:background="@drawable/art2">
 
     <TextView
-        android:id="@+id/txtMaast"
-        android:layout_width="match_parent"
+        android:id="@+id/txtv_Maast_account"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="190dp"
         android:layout_marginStart="167dp"
@@ -56,9 +56,7 @@
         android:layout_marginTop="0dp"
         android:background="@null"
         android:text="@string/forgot_password"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="12sp"/>
 
     <Button
         android:id="@+id/btn_login"
@@ -83,14 +81,14 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtvOr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:text="@string/or"
-        android:textSize="20sp"
-        android:textColor="@color/colorBlack" />
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
 
 
     <com.google.android.gms.common.SignInButton
@@ -100,6 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:buttonSize="wide"
-        app:colorScheme="dark" />
+        app:colorScheme="dark"
+        tools:ignore="RedundantNamespace" />
 
 </LinearLayout>

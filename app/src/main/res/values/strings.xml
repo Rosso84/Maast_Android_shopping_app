@@ -16,5 +16,7 @@ Create the combination you love and make a style of your own. Every style is uni
     <string name="handle">Handle</string>
     <string name="strap">Strap</string>
     <string name="or">----or----</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

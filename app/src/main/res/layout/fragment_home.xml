@@ -11,6 +11,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/txtv_Maast_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

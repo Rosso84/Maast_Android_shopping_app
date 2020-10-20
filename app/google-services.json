@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "722947664895",
+    "firebase_url": "https://maast-ecb2e.firebaseio.com",
+    "project_id": "maast-ecb2e",
+    "storage_bucket": "maast-ecb2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722947664895:android:a65bbdf221f348154695ca",
+        "android_client_info": {
+          "package_name": "no.store.maast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722947664895-tkkg7lhnti3h3bovn2j3n439bflrvhu7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "no.store.maast",
+            "certificate_hash": "7f9545d94a15c7d1f5061e481ed208e2a65e66d9"
+          }
+        },
+        {
+          "client_id": "722947664895-40jdvu46kpqu1givqur7qccglll1q3ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA33YnXr-yyEwzC9wLgvuGzBuG5f7QsAR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722947664895-40jdvu46kpqu1givqur7qccglll1q3ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

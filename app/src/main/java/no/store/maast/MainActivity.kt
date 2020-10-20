@@ -1,10 +1,16 @@
 package no.store.maast
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_account.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,12 +27,11 @@ class MainActivity : AppCompatActivity() {
         homeFragment = HomeFragment()
         makeCurrentFragment(homeFragment)
 
-        val bottomNav: BottomNavigationView = findViewById(R.id.btm_nav);
-        bottomNav.setOnNavigationItemSelectedListener { item ->
+        btm_nav.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> {
                     homeFragment = HomeFragment()
-                  makeCurrentFragment(homeFragment)
+                    makeCurrentFragment(homeFragment)
                 }
 
                 R.id.shop -> {
@@ -36,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.account -> {
                     accountFragment = AccountFragment()
-                   makeCurrentFragment(accountFragment)
+                    makeCurrentFragment(accountFragment)
                 }
 
                 R.id.cart -> {
@@ -46,6 +51,8 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+
     }
 
     private fun makeCurrentFragment(fragment: Fragment) =
