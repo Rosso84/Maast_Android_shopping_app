@@ -1,15 +1,10 @@
 package no.store.maast
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_account.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -51,12 +46,12 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-
-
     }
 
-    private fun makeCurrentFragment(fragment: Fragment) =
+    fun makeCurrentFragment(fragment: Fragment) =
         supportFragmentManager.beginTransaction().replace(R.id.frame_layout, fragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)                      //open = adds a new fragment to the stack
             .commit()
+
 }
+

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpFragment">
+
+
+    <TextView
+        android:id="@+id/txtv_maast_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorBlack"
+        android:textSize="60sp" />
+
+    <EditText
+        android:id="@+id/edt_name_SignIn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtv_maast_sign_up"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_layout"
+        android:gravity="center"
+        android:hint="@string/full_name"
+        android:importantForAutofill="no"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        tools:ignore="TextFields" />
+
+     <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name_SignIn"
+        android:layout_centerHorizontal="true"
+         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_layout"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        tools:ignore="TextFields" />
+
+      <EditText
+          android:id="@+id/edtText_phoneNumber"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/edt_email"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/rounded_layout"
+          android:layout_marginTop="30dp"
+          android:gravity="center"
+          android:hint="@string/phone_number"
+          android:importantForAutofill="no"
+          android:textColor="@color/colorBlack"
+          android:textSize="25sp"
+          tools:ignore="TextFields" />
+
+  <!--  <TextView
+        android:id="@+id/password_header_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/edt_pass_sign_in"
+        android:text="@string/choose_a_password"/>-->
+
+    <EditText
+        android:id="@+id/edt_pass_sign_in"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtText_phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_layout"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        tools:ignore="TextFields"/>
+
+
+    <EditText
+        android:id="@+id/edt_pass_sign_in_repeat"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_pass_sign_in"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_layout"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:hint="@string/repeat_password"
+        android:importantForAutofill="no"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        tools:ignore="TextFields"/>
+
+
+    <Button
+        android:id="@+id/btn_register_sign_in"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_pass_sign_in_repeat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:textColor="@color/colorwhite"
+        android:background="@color/colorBlack"/>
+
+</RelativeLayout>

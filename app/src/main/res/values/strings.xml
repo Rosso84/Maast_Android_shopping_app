@@ -18,5 +18,11 @@ Create the combination you love and make a style of your own. Every style is uni
     <string name="or">----or----</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="full_name">Full name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="register">Register</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="choose_a_password">Choose a password</string>
 
 </resources>
