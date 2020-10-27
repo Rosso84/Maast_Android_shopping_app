@@ -8,34 +8,35 @@
 
 
     <TextView
-        android:id="@+id/txtv_maast_sign_up"
+        android:id="@+id/txtv_createNewAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="@string/app_name"
+        android:layout_marginTop="50dp"
+        android:text="@string/create_new_account"
         android:textColor="@color/colorBlack"
-        android:textSize="60sp" />
+        android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/edt_name_SignIn"
+        android:id="@+id/edt_name_sign_up"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtv_maast_sign_up"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtv_createNewAccount"
+         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_layout"
         android:gravity="center"
+        android:layout_marginTop="40dp"
         android:hint="@string/full_name"
-        android:importantForAutofill="no"
         android:textColor="@color/colorBlack"
         android:textSize="25sp"
+        android:importantForAutofill="no"
         tools:ignore="TextFields" />
 
      <EditText
-        android:id="@+id/edt_email"
+        android:id="@+id/edt_email_sign_up"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_name_SignIn"
+        android:layout_below="@id/edt_name_sign_up"
         android:layout_centerHorizontal="true"
          android:layout_marginTop="30dp"
         android:background="@drawable/rounded_layout"
@@ -47,36 +48,37 @@
         tools:ignore="TextFields" />
 
       <EditText
-          android:id="@+id/edtText_phoneNumber"
+          android:id="@+id/edt_phoneNumber_sign_up"
           android:layout_width="300dp"
           android:layout_height="wrap_content"
-          android:layout_below="@id/edt_email"
+          android:layout_below="@id/edt_email_sign_up"
           android:layout_centerHorizontal="true"
           android:background="@drawable/rounded_layout"
           android:layout_marginTop="30dp"
           android:gravity="center"
           android:hint="@string/phone_number"
+          android:inputType="number"
           android:importantForAutofill="no"
           android:textColor="@color/colorBlack"
           android:textSize="25sp"
           tools:ignore="TextFields" />
 
-  <!--  <TextView
-        android:id="@+id/password_header_signup"
+    <TextView
+        android:id="@+id/txtv_pass_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/edt_pass_sign_in"
-        android:text="@string/choose_a_password"/>-->
+        android:layout_below="@+id/edt_phoneNumber_sign_up"
+        android:layout_marginTop="80dp"
+        android:text="@string/choose_a_password"/>
 
     <EditText
-        android:id="@+id/edt_pass_sign_in"
+        android:id="@+id/edt_pass_sign_up"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edtText_phoneNumber"
+        android:layout_below="@id/txtv_pass_header"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_layout"
-        android:layout_marginTop="85dp"
         android:gravity="center"
         android:hint="@string/password"
         android:importantForAutofill="no"
@@ -86,10 +88,10 @@
 
 
     <EditText
-        android:id="@+id/edt_pass_sign_in_repeat"
+        android:id="@+id/edt_pass_sign_up_repeat"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_pass_sign_in"
+        android:layout_below="@id/edt_pass_sign_up"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_layout"
         android:layout_marginTop="30dp"
@@ -102,10 +104,10 @@
 
 
     <Button
-        android:id="@+id/btn_register_sign_in"
+        android:id="@+id/btn_register_sign_up"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_pass_sign_in_repeat"
+        android:layout_below="@+id/edt_pass_sign_up_repeat"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="@string/register"

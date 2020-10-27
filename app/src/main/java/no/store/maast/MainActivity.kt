@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var homeFragment: HomeFragment;
     lateinit var shopFragment: ShopFragment;
-    lateinit var accountFragment: AccountFragment;
+    lateinit var signInFragment: SignInFragment;
     lateinit var cartFragment: CartFragment;
 
 
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.account -> {
-                    accountFragment = AccountFragment()
-                    makeCurrentFragment(accountFragment)
+                    signInFragment = SignInFragment()
+                    makeCurrentFragment(signInFragment)
                 }
 
                 R.id.cart -> {

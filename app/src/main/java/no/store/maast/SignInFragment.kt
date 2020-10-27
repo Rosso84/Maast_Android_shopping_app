@@ -10,10 +10,10 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import kotlinx.android.synthetic.main.fragment_account.*
+import kotlinx.android.synthetic.main.fragment_sign_in.*
 
 
-class AccountFragment : Fragment() {
+class SignInFragment : Fragment() {
 
     private var mAuth: FirebaseAuth? = null
     //public var user:
@@ -36,7 +36,7 @@ class AccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account, container, false)
+        return inflater.inflate(R.layout.fragment_sign_in, container, false)
     }
 
     override fun onStart() {
@@ -48,14 +48,14 @@ class AccountFragment : Fragment() {
 
     fun updateUI(user: FirebaseUser?) {
         if (user != null) {
-            Toast.makeText(activity, "Signed in as 'username", Toast.LENGTH_LONG).show()
+            Toast.makeText(activity, "Signed in as 'username'", Toast.LENGTH_LONG).show()
             //startActivity(Intent(this, AnotherActivity::class.java))
         } else {
-            Toast.makeText(activity, "Click on Account to log in", Toast.LENGTH_LONG).show()
+            Toast.makeText(activity, "Not signed in", Toast.LENGTH_LONG).show()
         }
     }
 
-    fun onClick(): Void?{
+    fun onClick(){
         btn_forgotPass.setOnClickListener {
             Toast.makeText(
                 activity, "btn forgot pressed",
@@ -85,8 +85,6 @@ class AccountFragment : Fragment() {
             transaction?.commit()
 
         }
-
-        return null
     }
 
 }

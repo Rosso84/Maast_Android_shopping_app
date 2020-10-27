@@ -24,5 +24,6 @@ Create the combination you love and make a style of your own. Every style is uni
     <string name="register">Register</string>
     <string name="repeat_password">Repeat Password</string>
     <string name="choose_a_password">Choose a password</string>
+    <string name="create_new_account">Create new account</string>
 
 </resources>
